@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './../../assets/images/logo.svg';
-import { FaCartArrowDown, FaHeart, FaUserAlt } from "react-icons/fa";
+import { FaHeart, FaUserAlt } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 

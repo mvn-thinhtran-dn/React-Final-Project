@@ -11,8 +11,6 @@ const AddProduct = () => {
     price: ''
   })
 
-  const [listProd, setListProd] = useState([])
-
   const handleChange = e => {
     const target = e.target;
     const value = target.value;

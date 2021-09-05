@@ -7,14 +7,14 @@ const ProductDetail = () => {
   const [prods, setProds] = useState([]);
   useEffect(() => {
     firebaseData.collection('products').onSnapshot(snapshot => {
+      // eslint-disable-next-line array-callback-return
       snapshot.docs.map(doc => {
         if(id === doc.id){
           setProds(doc.data())
         }
       })
     })
-    console.log(prods);
-  }, [])
+  }, [id])
 
   return (
     <div className="container">
